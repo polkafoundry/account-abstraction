@@ -7,7 +7,7 @@ const deployVerifyingPaymaster: DeployFunction = async function (hre: HardhatRun
     const from = await provider.getSigner().getAddress()
     const network = await provider.getNetwork()
     // only deploy on local test network.
-    
+
     const entrypoint = await hre.deployments.get('EntryPoint')
     await hre.deployments.deploy(
         'VerifyingPaymaster', {
