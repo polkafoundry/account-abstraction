@@ -52,7 +52,7 @@ contract VerifyingPaymaster is BasePaymaster {
                 keccak256(userOp.callData),
                 userOp.accountGasLimits,
                 uint256(bytes32(userOp.paymasterAndData[PAYMASTER_VALIDATION_GAS_OFFSET : PAYMASTER_DATA_OFFSET])),
-                userOp.preVerificationGas,
+//                userOp.preVerificationGas,
                 userOp.gasFees,
                 block.chainid,
                 address(this),
